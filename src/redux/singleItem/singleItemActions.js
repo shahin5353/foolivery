@@ -26,7 +26,7 @@ export const fetchSingleItem = (itemId) => {
     console.log(itemId);
     return dispatch => {
         dispatch(fetchSingleItemRequest)
-        Axios.get(`http://localhost:4500/item/${itemId}`)
+        Axios.get(`https://foolivery-api.herokuapp.com/item/${itemId}`)
         .then(res => {
             const item = res.data;
             dispatch(fetchSingleItemSuccess(item))

@@ -25,7 +25,7 @@ export const fetchCheckoutItems = (savedCart) => {
     const itemsId = Object.keys(savedCart.cartItems);
     return dispatch => {
         dispatch(fetchCheckoutItemsRequest)
-        fetch('http://localhost:4500/itemsById', {
+        fetch('https://foolivery-api.herokuapp.com/itemsById', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

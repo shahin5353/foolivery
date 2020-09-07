@@ -25,7 +25,7 @@ const fetchItemsFailure = error => {
 export const fetchItems = () => {
     return dispatch => {
         dispatch(fetchItemsRequest)
-        Axios.get('http://localhost:4500/items')
+        Axios.get('https://foolivery-api.herokuapp.com/items')
             .then(res => {
                 const items = res.data;
                 dispatch(fetchItemsSuccess(items))

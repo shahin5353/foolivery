@@ -25,7 +25,7 @@ export const addItem = (itemData) => {
     console.log(itemData);
     return dispatch => {
         dispatch(addItemRequest)
-        fetch('http://localhost:4500/addItem', {
+        fetch('https://foolivery-api.herokuapp.com/addItem', {
             method: 'POST',
             body: JSON.stringify(itemData),
             headers: {

@@ -25,7 +25,7 @@ const deleteItemFailure = error => {
 export const deleteItem = (id) => {
     return dispatch => {
         dispatch(deleteItemRequest)
-        Axios.delete(`http://localhost:4500/item/${id}`)
+        Axios.delete(`https://foolivery-api.herokuapp.com/item/${id}`)
             .then(res => {
                 const item = res.data;
                 dispatch(deleteItemSuccess(item))

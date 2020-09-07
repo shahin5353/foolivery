@@ -24,7 +24,7 @@ const updateItemFailure = error => {
 export const updateItem = (id,updatedField) => {
     return dispatch => {
         dispatch(updateItemRequest);
-        fetch(`http://localhost:4500/item/${id}`, {
+        fetch(`https://foolivery-api.herokuapp.com/item/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(updatedField),
             headers: {
