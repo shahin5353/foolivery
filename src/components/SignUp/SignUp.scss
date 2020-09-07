@@ -1,4 +1,3 @@
-@import '../../styles/base.scss' ;
 .sign-up{
     background-image: url(https://d2wu471yepgs9e.cloudfront.net/metatag-images/og-image.jpg);
     background-repeat: no-repeat;
@@ -17,5 +16,5 @@
     padding: 12px 15px !important;
 }
 .error{
-    color: $error-color;
+    color: rgb(236, 26, 26);
 }

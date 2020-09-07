@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
     return (
+      <>
+      <hr className="bg-success" style={{height:'20px', color:'#'}}/>
         <nav
         className="navbar navbar-expand"
         id="main-nav"
@@ -33,6 +35,15 @@ const Footer = () => {
             </ul>
           </div>
       </nav>
+      <hr className="my-5"/>
+      <div className="row">
+        <div className="col-5">
+
+        </div>
+        <div className="col-3"></div>
+        <div className="col-4"></div>
+      </div>
+      </>
     );
 };
 
