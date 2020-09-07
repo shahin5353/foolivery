@@ -8,7 +8,6 @@ const HomePage = () => {
     return (
        <>
         <Header />
-        
         <div className="container text-center bg-light">
         <Link to="/menu">
            <img src={underConstruction} className="img-fluid" alt=""/>

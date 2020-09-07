@@ -18,6 +18,7 @@ import DashboardPage from './admin/pages/DashboardPage';
 import AddItemPage from './admin/pages/AddItemPage';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import NotFoundPage from './pages/NotFoundPage';
 library.add(fab);
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
             </Route>
             <Route exact path="/admin/addItem">
               <AddItemPage/>
+            </Route>
+            <Route exact path="*">
+              <NotFoundPage/>
             </Route>
           </Switch>
         </Router>

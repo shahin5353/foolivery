@@ -14,7 +14,7 @@ const Item = (props) => {
       dispatch(fetchSingleItem(itemId));
     }, [dispatch,itemId]);
     return (
-        <div className="container my-5">
+        <div className="container my-5 px-5">
             {
                 itemData.loading ?
                  <div className="text-center">

@@ -27,7 +27,7 @@ const Checkout = () => {
   let delivery = subTotal > 200 ? subTotal / 100 : subTotal === 0 ? 0 : 2;
   const total = subTotal + tax + delivery;
   return (
-    <div>
+    <div className="container my-5">
       <h1 className="text-center">Checkout Your Order</h1>
       {Object.keys(selector.cartData.cartItems).length > 0 &&
         selector.checkoutItems.loading && (
@@ -36,8 +36,7 @@ const Checkout = () => {
           </div>
         )}
       {selector.checkoutItems.cartItems.length > 0 && (
-        <div className="container mt-5">
-          <div className="row">
+          <div className="row mt-5">
             <div className="col-12 ml-lg-5">
               {selector.checkoutItems.cartItems.map((item) => {
                 return (
@@ -91,10 +90,9 @@ const Checkout = () => {
               </div>
             </div>
           </div>
-        </div>
       )}
       {Object.keys(selector.cartData.cartItems).length < 1 && (
-        <div className="container my-5 text-center">
+        <div className="my-5 text-center">
           <img src={notFound} alt="notFound-img" />
           <h3 className="mt-5">
             Please go to{" "}
