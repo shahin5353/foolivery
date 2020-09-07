@@ -1,0 +1,21 @@
+@import '../../styles/base.scss' ;
+.sign-up{
+    background-image: url(https://d2wu471yepgs9e.cloudfront.net/metatag-images/og-image.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    border-radius: 45px 0px 0px 45px;
+}
+.sign-up  form{
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 0px 45px 45px 0px;
+}
+.sign-up .form-control{
+    background:#f5f5f5;
+    border:none;
+    padding: 12px 15px !important;
+}
+.error{
+    color: $error-color;
+}

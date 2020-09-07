@@ -1,0 +1,32 @@
+#hero-block{
+    height: 30vh;
+    width: 100%;
+    background-color: #3aa137;
+    border-radius: 45px 0px 0px 45px;
+    .breadcrumb{
+        background-color: transparent;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .breadcrumb-item {
+            &::before{
+                color: #fff;
+            }
+        }
+        .breadcrumb-active{
+            color:#000;
+        }
+    }
+    .banner-img{
+       img{
+        width: 30vw;
+       }
+    }
+    .leaf-img{
+        img{
+            width: 10vw;
+            transform: rotate(-100deg);
+        }
+    }
+}
