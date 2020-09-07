@@ -23,7 +23,6 @@ const fetchSingleItemFailure = error => {
     }
 }
 export const fetchSingleItem = (itemId) => {
-    console.log(itemId);
     return dispatch => {
         dispatch(fetchSingleItemRequest)
         Axios.get(`https://foolivery-api.herokuapp.com/item/${itemId}`)

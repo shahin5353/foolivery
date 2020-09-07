@@ -44,14 +44,13 @@ const Auth = () => {
             
         })
         .catch(error=>{
-            console.log(error);
             setError(error)
         });
     }
     const signOut = ()=>{
         return firebase.auth().signOut()
         .then(res => setUser(null))
-        .catch(error=>console.log(error))
+        .catch(error=>setError(error))
     }
     return {
         user,

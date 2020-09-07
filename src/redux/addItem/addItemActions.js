@@ -22,7 +22,6 @@ const addItemFailure = error => {
     }
 }
 export const addItem = (itemData) => {
-    console.log(itemData);
     return dispatch => {
         dispatch(addItemRequest)
         fetch('https://foolivery-api.herokuapp.com/addItem', {

@@ -13,7 +13,6 @@ const AddNewItem = () => {
     newData.status = "true";
     dispatch(addItem(newData));
   }
-  console.log(addItemFeedback);
   return (
     <div className="container">
      <div className="bg-warning px-lg-5 py-5 px-2">

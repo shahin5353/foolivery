@@ -5,9 +5,8 @@ import { fetchSingleItem } from '../../redux';
 import { useDispatch, useSelector } from 'react-redux';
 
 
-const Item = (props) => {
+const Item = () => {
     const { itemId } = useParams();
-    console.log(itemId);
     const itemData = useSelector((state) => state.item);
     const dispatch = useDispatch();
     useEffect(() => {
